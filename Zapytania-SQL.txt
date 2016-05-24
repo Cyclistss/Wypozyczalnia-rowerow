@@ -1,0 +1,7 @@
+- INSERT INTO `Rower` (`ID_rower`, `nazwa_roweru`) VALUES (NULL, `$nazwa_roweru`);
+- INSERT INTO `Uzytkownik` (`ID_uzytkownicy`, `nazwa_uzytkownika`, `haslo`) VALUES (NULL, `$nazwa_uzytkownika', '$haslo_md5',);
+- INSERT INTO `Stan_techniczny` (`ID_stan`, `stan`) VALUES (NULL, `$stan`,);
+- INSERT INTO `Uprawnienia_uzytkownikow` (`ID_uprawnienia`, `uprawnienia`) VALUES (NULL, '$uprawnienia');
+- INSERT INTO `Klient` (`pesel`, `imie`, `nazwisko`, `adres`, `miejscowosc`, `telefon`) VALUES (NULL, '$pesel', '$imie', ' $nazwisko', '$adres', '$miejscowosc', '$telefon');
+- INSERT INTO `Pracownik` (`pesel_prac`, `imie_prac`, `nazwisko_prac`, `adres_prac`, `miejscowosc_prac`, `telefon_prac`) VALUES (NULL, '$pesel_prac', '$imie_prac', ' $nazwisko_prac', '$adres_prac', '$miejscowosc_prac', '$telefon_prac');
+- INSERT INTO `Wypozyczenie` (`ID_wypozyczenia`, `data_wypozyczenia`, `data_oddania`) VALUES (NULL, `$data_wypozyczenia`, `$data_oddania`);
