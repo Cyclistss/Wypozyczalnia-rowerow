@@ -1,0 +1,28 @@
+public void zepsuj(int id){
+        try{
+            String query = "UPDATE `rower` SET `stan` = 'Zepsuty' WHERE `rower`.`ID_rower` = "+ id+";";
+            st.executeUpdate(query);
+        }
+        catch(Exception ex){
+            System.out.println("Blad " + ex);
+        }
+    }
+    
+  public void serwis(int id){
+        try{
+            String query = "UPDATE `rower` SET `stan` = 'w_naprawie' WHERE `rower`.`ID_rower` = "+ id;
+            st.executeUpdate(query);
+        }
+        catch(Exception ex){
+            System.out.println("Blad " + ex);
+        }
+    }
+  public void naprawa(int id){
+        try{
+            String query = "UPDATE `rower` SET `stan` = 'Dobry' WHERE `rower`.`ID_rower` = "+ id;
+            st.executeUpdate(query);
+        }
+        catch(Exception ex){
+            System.out.println("Blad " + ex);
+        }
+    }
