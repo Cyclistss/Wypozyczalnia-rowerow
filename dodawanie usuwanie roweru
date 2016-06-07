@@ -1,0 +1,23 @@
+    public void dodaj(int id){
+        
+        try{
+            String query = "INSERT INTO `rower` (`ID_rower`, `stan`, `wypozyczony`) VALUES ('" + id + "', 'Dobry', '0')";
+            st.executeUpdate(query);
+        }
+        catch(Exception ex){
+            System.out.println("Blad " + ex);
+        }
+        
+    }
+    
+    public void usun(int id){
+        
+        try{
+            String query = "DELETE FROM `rower` WHERE `rower`.`ID_rower` = " + id;
+            st.executeUpdate(query);
+        }
+        catch(Exception ex){
+            System.out.println("Blad " + ex);
+        }
+        
+    }
