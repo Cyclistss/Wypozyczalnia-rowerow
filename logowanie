@@ -1,0 +1,9 @@
+String query = "select * from uzytkownik";
+rs = st.executeQuery(query);
+    while(rs.next()){
+      String login2 = rs.getString("nazwa_uzytkownika");
+      String haslo2 = rs.getString("haslo");
+      if((login.equals(login2)) && (haslo.equals(haslo2))) {
+        odp = true;
+        zalogowany = rs.getInt("ID_uzytkownika");
+      }
