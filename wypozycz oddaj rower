@@ -1,0 +1,19 @@
+    public void wypozycz(int id){
+        try{
+            String query = "UPDATE `rower` SET `wypozyczony` = '1' WHERE `rower`.`ID_rower` = "+ id;
+            st.executeUpdate(query);
+        }
+        catch(Exception ex){
+            System.out.println("Blad " + ex);
+        }
+    }
+    
+    public void oddaj(int id){
+        try{
+            String query = "UPDATE `rower` SET `wypozyczony` = '0' WHERE `rower`.`ID_rower` = "+ id;
+            st.executeUpdate(query);
+        }
+        catch(Exception ex){
+            System.out.println("Blad " + ex);
+        }
+    }
